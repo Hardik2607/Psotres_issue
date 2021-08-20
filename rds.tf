@@ -1,5 +1,6 @@
-module "db" {
-  source = "../../"
+module "rds_example_complete-postgres" {
+  source  = "terraform-aws-modules/rds/aws//examples/complete-postgres"
+  version = "3.3.0"
 
   identifier = local.name
 
